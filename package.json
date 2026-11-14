@@ -1,0 +1,30 @@
+{
+  "name": "lxcor-cordial",
+  "version": "0.1.0",
+  "description": "The Cordial calendar and clock in JavaScript: date and time (noon rule, Void Days, Anno Adami), the equinox table to 2100. Reference implementation: lxcor-cordial on PyPI.",
+  "license": "Apache-2.0",
+  "author": "Alexandre Scozzafave Alves",
+  "homepage": "https://cordial.lxcor.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxcor/cordial-js.git"
+  },
+  "keywords": ["calendar", "clock", "cordial", "13-month calendar", "364-day year", "equinox", "time"],
+  "type": "module",
+  "main": "./dist/cordial.cjs",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./dist/cordial.cjs"
+    }
+  },
+  "files": ["src", "dist", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && TZ=UTC node --test test/cordial.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
