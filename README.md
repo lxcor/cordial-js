@@ -1,5 +1,7 @@
 # lxcor-cordial (JavaScript)
 
+By Alexandre Scozzafave Alves · [cordial.lxcor.com](https://cordial.lxcor.com)
+
 The [Cordial](https://cordial.lxcor.com) calendar and clock in JavaScript: 13 months of 28 days, a 364-day year with one or two Void Days decided by the equinox, a day of 26 hours of 52 minutes of 52 seconds that begins at noon, weekdays named for the colours of the spectrum, and the year count from Adam (Anno Adami).
 
 No dependencies. Works in browsers, Node (ESM and CommonJS) and Cordova / WebViews, fully offline.
